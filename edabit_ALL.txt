@@ -1,0 +1,3522 @@
+
+'''
+
+def skip_the_sugar(drinks):
+	a = ['cola','fanta']
+	b = []
+	for x in drinks:
+		if x not in a:
+			b.append(x)
+	return b
+
+print(skip_the_sugar(["fanta", "cola", "water"]))
+print(skip_the_sugar(["fanta", "cola"]))
+print(skip_the_sugar(["lemonade", "beer", "water"]))
+
+
+def fact(n):
+    f = 1
+    while n >=1:
+        f = f*n
+        n = n -1
+    return f
+print(fact(3))
+
+
+
+
+def solve(nums):
+    y = str(nums)
+    return y
+
+print(solve([1, 9, 1]))
+
+
+
+
+def adds_n(n):
+    return lambda x: n + x
+
+adds1 = adds_n(3)
+print(adds1(1))
+
+
+
+
+def last_dig(a, b, c):
+    x = list[a]
+    x = a[-1]
+    print(x)
+    y = b[-1]
+    print(y)
+    z = c[-1]
+    print(z)
+    s = x*y
+    print(s)
+    if s == z:
+        return True
+last_dig(25, 21, 125)
+
+
+
+def fizz_buzz(maximum):
+    for i in range(maximum):
+        if i % 3 == 0:
+            print("fizz")
+        else:
+            print(i)
+fizz_buzz(10)
+
+def sum_fractions(lst):
+
+    a = [x[0]/x[1] for x in lst]
+    return round(sum(a))
+
+print(sum_fractions([[3,2],[5,6]]))
+print(sum_fractions([[36, 4], [22, 60]]))
+print(sum_fractions([[11, 2], [3, 4], [5, 4], [21, 11], [12, 6]]))
+
+
+
+def length(txt):
+
+    if len(txt) == 0:
+        return 0
+    else:
+        return length(txt)
+
+print(length("apple"))
+
+
+def factoral(n):
+    if n == 1:
+        return 1
+    else:
+        return n * factoral(n-1)
+
+print(factoral(6))
+
+
+
+
+def is_curzon(num):
+
+    a = 2**num + 1
+    b = 2*num + 1
+    if a % b == 0:
+        return True
+    else:
+        return False
+print(is_curzon(5))
+
+print(is_curzon(10))
+
+
+
+def factorial(Z):
+    if Z == 0:
+        return 1
+    else:
+        return Z * factorial(Z-1)
+
+print(factorial(6))
+
+
+def factorial(Z):
+    if Z == 1:
+        return 1
+    else:
+        return Z * factorial(Z-1)
+
+print(factorial(6))
+
+
+
+
+def stutter(word):
+
+    a = word[:2]
+    b = '...'
+    c = '?'
+    #return  a + b + ' ' +  a + ' ' + b + word + c
+    return f" {a}{b}{a}{b}{word}{c}"
+print(stutter("incredible"))
+
+
+
+def adds_n(n):
+
+    return lambda n: n + 1
+
+a = adds_n(2)
+print(a)
+#print(next(a))
+
+
+
+def adds_n(n):
+    return lambda x: n + x
+
+adds1 = adds_n(3)
+print(adds1(1))
+
+
+def grade_percentage(user_score, pass_score):
+    if user_score < pass_score:
+        return "You FAILED the Exam"
+    else:
+        return "You PASSED the Exam"
+
+print(grade_percentage("85%", "85%"))
+print(grade_percentage("65%", "90%"))
+
+
+
+
+def add_suffix(suffix):
+    a =lambda suffix:suffix + 'ly'
+    return a
+
+d= add_suffix("ho")
+print(d("ouu"))
+
+
+def multiply(l):
+    a = len(l)
+    for i in l:
+        return [[i] * len(l)]
+
+print(multiply([4, 5,6]))
+
+def multiply(l):
+    return [[x]*len(l) for x in l]
+
+print(multiply([4, 5]))
+
+
+def multiply(l):
+    a = len(l)
+    for i in range(len(l)):
+        #return [[i] * len(l),[i+1]* len(l),[i+2] *len(l)]
+        return [[i] * len(l)]
+print(multiply([4, 5,6]))
+
+
+
+import math as m
+def is_sastry(n):
+    a = str(n + 1)
+    b = str(n)
+    c = int(b+a)
+    d = m.sqrt(c)
+    if c /d == d:
+        return True
+    else:
+        return False
+
+print(is_sastry(183))
+print(is_sastry(184))
+print(is_sastry(106755))
+
+
+
+
+
+def largest_even(lst):
+    lst1 = []
+    for x in lst:
+        if x % 2 ==0:
+            lst1.append(x)
+    return max(lst1)
+
+
+print(largest_even([3, 7, 2, 1, 7, 9, 10, 13]))
+
+
+
+def fibbo(x):
+    lst = []
+    a = 0
+    b = 1
+    for x in range(0,10):
+        x = a + b
+        a, b = b, a + b
+        print(x)
+
+        x +=1
+        lst.append(x)
+    return x
+
+print(fibbo(5))
+print(fibonacci(12) )
+
+
+def cou(n):
+    n = 4
+    yield n
+    n = n + 4
+    yield n
+    n = n + 7
+    yield n
+
+a =(cou(5))
+
+for x in a:
+    print(x)
+
+
+
+
+
+def first(txt):
+    print("yo")
+
+first("yoyo1")
+sc = first
+print(sc("yoyoyoy"))
+
+
+
+def check1(n):
+    return n + 1
+
+print(check1(5))
+
+def check2(x):
+    return x+ 2
+
+print(check2(5))
+
+def big(f,s):
+    return f(s)
+
+a = big(check1,4)
+print(a)
+
+a = big(check2,4)
+print(a)
+
+
+
+def pret(func):
+    def inner():
+        print("i got decorated")
+        #func()
+    return inner
+
+
+def ord():
+    return "ord"
+print(ord())
+
+p = pret(ord)
+print(p())
+
+
+#c = 2 # global variable
+
+
+def add():
+    global c
+    c = 5
+    c = c **2
+    return (c)
+
+print(add())
+
+
+
+
+try:
+    print(5/0)
+except Exception as e:
+    print(5/2)
+    print(e)
+finally:
+    print("bye")
+
+
+i = 1
+
+while i <= 5:
+    print(i)
+    i +=1
+
+
+
+
+
+def  fact (x):
+    if x == 1:
+        return 1
+    else :
+        return x * fact(x-1)
+print(fact(4))
+
+
+
+s = [6,7,8,9,]
+d = list(filter(lambda s : s %2 ==0, s))
+print(d)
+
+f = list(map(lambda s : s **2, s))
+print(f)
+
+
+
+names = ['Bob', 'Alice', 'Guido']
+
+for x ,y in enumerate(names,7):
+    print(f" {x} ::: {y} ")
+
+
+
+
+def sorty(lst):
+    for x in range(len(lst) - 1, 0, -1):
+        for y in range(x):
+            if lst[y] > lst[y + 1]:
+                temp = lst[y]
+                lst[y] = lst[y + 1]
+                lst[y + 1] = temp
+
+
+lst = [6,3,9,1,2]
+sorty(lst)
+print(lst)
+
+
+
+def unrepeated(txt):
+    l = []
+
+    for x in txt:
+        if x not in l:
+            l.append(x)
+    return ''.join(l)
+print(unrepeated('aaaaaa'))
+print(unrepeated('hello'))
+
+
+
+
+def return_unique(lst):
+    l = []
+    for i in lst:
+        if lst.count(i)<2:
+            l.append(i)
+    return l
+
+
+print(return_unique([1, 9, 8, 8, 7, 6, 1, 6]))
+print(return_unique([5, 5, 2, 4, 4, 4, 9, 9, 9, 1]))
+
+
+
+def factorial(n):
+    if n == 1 or n ==0:
+        return 1
+    else:
+        return n * factorial(n-1)
+print(factorial(5))
+print(factorial(3))
+
+
+
+import math
+def cone_volume(h, r):
+    p = math.pi
+    if r == 0:
+        return 0
+    else:
+
+        a = 1/3 * (p * (r **2) * h)
+    return round(a,2)
+
+print(cone_volume(3, 2))
+
+
+
+def odd_or_even(word):
+    if len(word) %2 ==0:
+        return True
+    else:
+        return False
+
+print(odd_or_even('apples'))
+print(odd_or_even('pears'))
+
+
+
+def count_characters(lst):
+    c = 0
+    for l in lst:
+        c += len(l)
+    return c
+
+print(count_characters([ "###", "###", "###"]))
+
+
+def correct_signs(txt):
+
+    if eval(txt) == True :
+        return True
+    else :
+        return False
+print(correct_signs("1 < 2 < 6 < 9 > 3"))
+print(correct_signs("13 > 44 > 33 > 1") )
+
+
+
+
+def collatz(num):
+
+    if num % 2 == 0:
+        a =int(num/2)
+        return a
+    if num %2 !=0:
+        a = int((num * 3) + 1)
+        return a
+
+    for x in a:
+        return collatz(x)
+
+print(collatz(2))
+print(collatz(5))
+print(collatz(16))
+print(collatz(10))
+
+juddy moody :
+girl detective
+
+
+
+def double_char(txt):
+    #l = []
+    for x in txt:
+        l = ''.split(txt)
+        y = x + x
+        #l.append(y)
+
+        return l
+print(double_char('hello'))
+
+
+
+import re
+txt = " alice15@gmail.com "
+pattern = "yourregularexpressionhere"
+
+a = "[^\w\d\s]"
+
+print(re.findall(a, txt))
+
+
+
+def profit_margin(cost_price, sales_price):
+
+    a = (sales_price-cost_price) % sales_price
+    return a
+
+print(profit_margin(28, 39))
+print(profit_margin(50, 50))
+
+
+import math
+def to_degree(radian):
+    #pi = 3.14
+    a = radian * 180/math.pi
+    return int(a)
+
+print(to_degree(math.pi))
+print(to_degree(math.pi/2))
+print(to_degree(math.pi/4))
+
+
+
+l = [[1,2,3],[5,6,7],[1,0,8]]
+print(sorted(l,key=1))
+
+
+1  * 2 * 3
+def factorial(num):
+    if num <= 1:
+        return 1
+    else:
+        return num * (factorial(num-1))
+
+print(factorial(3))
+print(factorial(5))
+
+
+
+s = 0
+for i in range(0,3):
+    s = s + i
+print(s)
+
+
+
+def give_me_something(a):
+
+    b = "something " + a
+    return b
+
+print(give_me_something("is better than nothing"))
+
+
+
+def football_points(wins, draws, losses):
+
+    return wins*3 + draws
+
+
+print(football_points(3, 4, 2))
+print(football_points(5, 0, 2))
+
+
+
+def first_last(name):
+    a,b = name[0],name[-1]
+
+    return a + b
+print(first_last("ganesh"))
+print(first_last("kali"))
+
+
+
+def how_many_stickers(n):
+
+    return 6 * n **2
+
+print(how_many_stickers(1))
+print(how_many_stickers(2))
+print(how_many_stickers(3))
+
+
+import math
+def cube_squareroot(num):
+    a= math.sqrt(num)
+    return int(a**3)
+print(cube_squareroot(81))
+print(cube_squareroot(1646089))
+
+
+def new_word(word):
+    return word[1:]
+print(new_word("apple"))
+print(new_word("cherry"))
+
+
+def repetition(txt, n):
+
+    #a = str()
+    return txt * n
+
+print(repetition("ab", 3))
+print(repetition("kiwi", 1) )
+
+
+def area_shape(base, height, shape):
+    if shape == 'triangle':
+       return 0.5 * base * height
+    if shape == 'parallelogram':
+        return base * height
+
+print(area_shape(2, 3, "triangle"))
+print(area_shape(2.9, 1.3, "parallelogram"))
+
+
+
+def first(num):
+    return num
+
+def greet():
+    return 'Hello!'
+
+a = first(greet)
+print(a())
+
+
+def add(x):
+    return x + 2
+
+
+def subs(y):
+    return 10-y
+
+def oper(subs,z):
+    s = subs(z)
+    return s
+
+print(oper(add,10))
+print(oper(subs,11))
+
+def fact(n):
+    if n == 1:
+        return  1
+    else:
+        return  n * fact(n-1)
+print(fact(5))
+
+
+l = []
+for x in range(2000,3201):
+
+    if x % 7 == 0 and x % 5 != 0:
+        l.append(x)
+    print(l, end= '')
+
+
+
+l=[]
+for i in range(2000, 3201):
+    if (i%7==0) and (i%5!=0):
+        l.append(str(i))
+
+print (','.join(l))
+
+
+
+
+
+def numb(num):
+    if num == 1:
+        return 1
+    else:
+        return num * numb(num-1)
+num = int(input("enter number for fact to be cal "))
+print(numb(num))
+
+
+
+n = int(input("enter num"))
+d = dict()
+
+for i in range(1,n+1):
+    d[i] = i*i
+
+print(d)
+
+
+
+vow = ['a','e','i','o','u']
+def count_vowels(txt):
+    count = 0
+    a = txt.lower()
+    a = list(a)
+    for x in a:
+        if x in vow:
+            count = count+1
+        return count
+count_vowels('BHOOM')
+count_vowels("Celebration")
+count_vowels("Prediction")
+
+
+
+
+def NOT(num):
+    return int(not num)
+
+print(NOT(1))
+print(NOT(0))
+
+
+
+def absolute(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+print(absolute(-5))
+print(absolute(250))
+print(absolute(-3.14))
+
+
+def distance_home(lst):
+    if sum(lst) < 0:
+        return -sum(lst)
+    else:
+        return sum(lst)
+print(distance_home([2, 4, 2, 5]))
+print(distance_home([-1, -4, -3, -2]))
+print(distance_home([3, 4, -5, -2]))
+
+
+
+def calc_kinetic_energy(m, v):
+    return round(1/2*(m*(v**2)))
+print(calc_kinetic_energy(60, 3))
+print(calc_kinetic_energy(45, 10))
+
+
+def last_ind(lst):
+    if len(lst) ==0:
+        return None
+    else:
+        lst = list(lst)
+        print(lst)
+    return lst[-1]
+print(last_ind([0, 4, 19, 34, 50, -9, patel]))
+print(last_ind("The quick brown fox jumped over the lazy ankita"))
+print(last_ind([]))
+
+
+
+#def get_vote_count(votes):
+
+def equation(s):
+    return eval(s)
+print(equation("1+1") )
+print(equation("7*4-2"))
+
+
+def greater_than_one(frac):
+    a = eval(frac)
+    if a > 1:
+        return True
+    else:
+        return False
+print(greater_than_one("1/2"))
+print(greater_than_one("7/4"))
+
+
+def modify_last(txt, n):
+    a = txt[-1]
+    return txt + (a*n)
+print(modify_last("Hello", 3))
+print(modify_last("excuse me what?", 5))
+
+
+def star_number(n):
+    return  (6 *n *(n - 1) + 1)
+print(star_number(2))
+
+
+
+def bomb(txt):
+    a = 'Bomb'
+    if a in txt:
+        return 'Duck!!!'
+    else:
+        return "There is no bomb, relax."
+print(bomb("There is a bomb."))
+print(bomb("This goes boom!!!"))
+
+
+def sort_nums_ascending(lst):
+    a = sorted(lst)
+    return a
+print(sort_nums_ascending([1, 2, 10, 50, 5]))
+
+
+def get_filename(path):
+    a = list(path.split('/'))
+    return a[-1]
+print(get_filename("C:/Projects/pil_tests/ascii/edabit.txt"))
+print(get_filename("C:/Users/johnsmith/Music/Beethoven_5.mp3"))
+
+
+def increment_items(lst):
+    newlst =[]
+    for i in lst:
+        i = i+1
+        newlst.append(i)
+    return newlst
+print(increment_items([0, 1, 2, 3]))
+
+
+def check_all_even(lst):
+    l = []
+    for x in lst:
+        if x %2 ==0:
+          l.append(x)
+        #print(l)
+    if len(l) ==len(lst):
+        return True
+    else:
+        return False
+print(check_all_even([1, 2, 3, 4]))
+
+
+def same_case(txt):
+    if txt.islower() == True:
+        return True
+    else:
+        return False
+print(same_case("hello"))
+print(same_case("HELLO"))
+print(same_case("Hello"))
+
+
+
+def same(a1, a2):
+    a = set(a1)
+    #print(a)
+    b = set(a2)
+    #print(b)
+    if len(a) == len(b):
+        return True
+    else:
+        return False
+
+print(same([1, 3, 4, 4, 4], [2, 5, 7]))
+
+
+def calculate(num1, num2, op):
+    if op == '+':
+        return num1 + num2
+    if op == '-':
+        return num1 - num2
+    if op == '*':
+        return num1 * num2
+    if op == '//':
+        return num1 // num2
+    if op == '%':
+        return num1 % num2
+    if op == '/':
+        return num1 / num2
+
+
+print(calculate(4, 9, "+"))
+print(calculate(12, 5, "-"))
+print(calculate(6, 3, "*"))
+print(calculate(25, 5, "//"))
+print(calculate(14, 3, "%"))
+print(calculate(7, 2, "/"))
+
+
+def second_largest(lst):
+    lst = sorted(lst)
+    return lst[-2]
+print(second_largest([10, 40, 30, 20, 50]))
+
+
+def yen_to_usd(yen):
+    u = yen/107.5
+    return round(u,2)
+print(yen_to_usd(1))
+print(yen_to_usd(500))
+
+
+
+def list_between(num1, num2, lst):
+    l = []
+    for x in lst:
+        if x > num1 and x < num2:
+            l.append(x)
+
+    return l
+print(list_between(3, 8, [1, 5, 95, 0, 4, 7]))
+
+
+def reverse_case(txt):
+	return txt.swapcase()
+print(reverse_case("Happy Birthday"))
+
+
+def both(n1, n2):
+    if (n1 < 0 or n1 > 0 or n1 ==0) and (n2 < 0 or n2 >0 or n2 ==0):
+        return True
+    else:
+        return False
+
+print(both(6, 2))
+print(both(-1, 2))
+
+
+
+def add_up_to(n):
+    if n == 1:
+        return 1
+    else:
+       return n + (add_up_to(n-1))
+print(add_up_to(3))
+print(add_up_to(10))
+
+
+def calculate_scores(txt):
+    l = []
+    t = list(txt)
+    print(t)
+    a = t.count('A')
+    l.append(a)
+    b = t.count('B')
+    l.append(b)
+    c = t.count('C')
+    l.append(c)
+    return l
+    #print(a)
+print(calculate_scores("ABC"))
+print(calculate_scores("ABCBACC"))
+
+
+def mean(nums):
+    a = len(nums)
+    b = sum(nums)
+    c = b/a
+    return c.__round__(1)
+print(mean([1, 6, 6, 7, 8, 8, 9, 10, 10]))
+print(mean([2, 3, 3, 6, 6, 8, 9, 10]))
+
+
+
+def reverse_capitalize(txt):
+    a =txt.upper()
+
+    return a[::-1]
+print(reverse_capitalize("abc"))
+print(reverse_capitalize("hellothere"))
+
+
+
+def find_letters(word):
+   l = []
+   count = 0
+    for x in word:
+        if count(x) ==1:
+        l.append(x)
+    return l
+
+
+
+print(find_letters("monopoly"))
+
+
+
+def is_palindrome(txt):
+    a = txt[::-1]
+    if a == txt:
+        return True
+    else:
+        return False
+print(is_palindrome("mom"))
+print(is_palindrome("scary"))
+
+
+def missing_num(lst):
+    lst = sorted(lst)
+    a = lst[0]
+    b = lst[-1]
+    c = b+1
+    for x in range(a,c):
+       if x not in lst:
+           return x
+
+   #return a
+print(missing_num([1, 2, 3, 4, 6, 7, 8, 9, 10]))
+#print(missing_num([7, 2, 3, 6, 5, 9, 1, 4, 8]))
+
+
+
+def remove_dups(lst):
+	return list(set(lst))
+print(remove_dups([1, 0, 1, 0]))
+print(remove_dups(["John", "Taylor", "John"]))
+print(remove_dups(["John", "Taylor", "john"]))
+
+
+
+def remove_dups(lst):
+    l = []
+    for x in lst:
+        if x not in l:
+            l.append(x)
+    return l
+
+print(remove_dups([1, 0, 1, 0]))
+print(remove_dups(["John", "Taylor", "John"]))
+print(remove_dups(["john", "John", "Taylor"])
+
+
+
+
+def score_calculator(easy, med, hard):
+    e = 5
+    m = 10
+    h = 20
+
+    if easy < 0 or med < 0 or hard < 0:
+        return False
+    else:
+        return(easy*e + med*m + hard*h)
+
+print(score_calculator(1, 2, 3))
+print(score_calculator(1, 0, 10))
+print(score_calculator(5, 2, -6))
+
+
+
+
+def find_letters(word):
+    l = []
+    for i in word:
+        if word.count(i) ==1:
+            l.append(i)
+    return l
+print(find_letters("monopoly"))
+print(find_letters("balloon"))
+
+
+
+
+
+def f(*x):
+    return sum(c)
+print(f(2))
+
+
+
+import pandas as pd
+
+
+df=pd.DataFrame({'a':[1,2,1],'b':[1,1,1]})
+print(df['a']==1)
+
+[[1,2],[3,4],
+[5,6],[7,8]
+
+
+import numpy as np
+A=np.array([[1,2],[3,4],[5,6],[7,8]])
+B=np.array([[1,2,3],[4,5,6],[7,8,9]])
+
+print(np.dot(A,B))
+
+
+x="Go"
+
+if(x=="Go"):
+
+    print('Go ')
+
+else:
+
+    print('Stop')
+
+print('Mike')
+
+
+def Add(x,y):
+
+    z=y+x
+
+    return(y)
+
+print(Add('1','1'))
+
+
+class Points(object):
+
+    def __init__(self,x,y):
+
+        self.x=x
+
+        self.y=y
+
+    def print_point(self):
+
+        print('x=',self.x,' y=',self.y)
+
+p2=Points(1,2)
+
+p2.x=2
+
+p2.print_point()
+
+
+
+def check():
+
+    return 0
+
+print(check. __doc__)
+
+
+
+class ABC:
+    def __init__(self):
+
+
+
+def create_id(firstname, lastname):
+    f = firstname[0].lower()
+    s = lastname[0].upper()
+    g = lastname[1:3].lower()
+    return f +s+g
+print(create_id("mary", "lamb"))
+print(create_id("John", "SMITH"))
+print(create_id("mary", "smith") )
+
+
+def assign_person_to_job(pl, jl):
+    a = dict(zip(pl,jl))
+    return a
+    print (a)
+pl = ['Annie','Steven','Lisa','Osman']
+jl = ['Teacher','Engineer','Doctor','Cashier']
+
+print(assign_person_to_job(pl, jl))
+
+
+def sum_first_n_nums(lst, n):
+
+    return sum(lst[0:n])
+
+print(sum_first_n_nums([1, 3, 2], 2))
+print(sum_first_n_nums([4, 2, 5, 7], 4))
+
+
+def wumbo(words):
+
+    if 'M' in words:
+        a = words.replace('M','W')
+    return a
+print(wumbo("I LOVE MAKING CHALLENGES"))
+print(wumbo("MEET ME IN WARSAW"))
+
+
+
+shapes = {
+	1 : 'circle',
+	2 : 'semi-circle',
+	3 : 'triangle',
+	4 : 'square',
+	5 : 'pentagon',
+	6 : 'hexagon',
+	7 : 'heptagon',
+	8 : 'octagon',
+	9 : 'nonagon',
+	10 : 'decagon'
+}
+
+def n_sided_shape(n):
+	return shapes.get(n)
+
+print(n_sided_shape(3))
+
+
+def reverse_and_not(i):
+    i = str(i)
+    return i[::-1] + i
+
+print(reverse_and_not(123))
+print(reverse_and_not(123456789))
+
+
+import math
+def vol_pizza(radius, height):
+    #pi = 3.14159
+    a = ((radius **2)* height * math.pi)
+    return round(a)
+
+print(vol_pizza(7, 2))
+print(vol_pizza(10, 2.5))
+
+
+
+def calculate_losses(items):
+   return sum(items.values()) or "Lucky you!"
+
+
+def additive_inverse(lst):
+    l = []
+    for x in lst:
+        l.append(-x)
+    return l
+print(additive_inverse([1, 2, 3, 4]))
+print(additive_inverse([-1, 2, -3, 4]))
+print(additive_inverse([]))
+
+
+def list_less_than_100(lst):
+    a = sum(lst)
+    if a < 100:
+        return True
+    else:
+        return False
+
+print(list_less_than_100([5, 57]))
+print(list_less_than_100([0]))
+print(list_less_than_100([77, 30]))
+
+
+def add_odd_to_n(n):
+    l = []
+    for x in range(0,n+1):
+        if x %2 !=0:
+          l.append(x)
+    return sum(l)
+print(add_odd_to_n(5))
+print(add_odd_to_n(13))
+
+
+def measure_the_depth(lst):
+    a = str(lst).count('[')
+
+    return a
+print(measure_the_depth([]))
+print(measure_the_depth([[]]))
+print(measure_the_depth([[[[[[[[[[[]]]]]]]]]]]))
+
+
+
+
+def variable_valid(var):
+    a = var[0]
+    if a.isalpha() == True or a.isidentifier() == False:
+        return True
+    else:
+        return False
+print(variable_valid("result"))
+print(variable_valid("2TimesN"))
+
+
+def check_equals(lst1, lst2):
+   if len(lst1) == len(lst2) and lst1[:] == lst2[:]:
+       return True
+   else:
+       return False
+
+print(check_equals([1, 2], [1, 3]))
+print(check_equals([4, 5, 6], [4, 5, 6]))
+
+
+def find_none(lst):
+    lst = str(lst)
+
+    for x in lst:
+        if lst[x] == 'None':
+            return lst.index[x]
+    else:
+        return -1
+
+print(find_none([1, 2, None]))
+print(find_none([0, 1, 2, 3, 4]))
+
+
+
+def get_sequence(low, high):
+    l = []
+    for x in range(low,high+1):
+        l.append(x)
+    return l
+print(get_sequence(1, 5))
+print(get_sequence(1000, 1000))
+
+
+
+def say_hello_bye(name, num):
+    if num == 1:
+        return 'Hello ' + name
+    else:
+        return 'Bye ' + name
+
+print(say_hello_bye("alon", 1))
+print(say_hello_bye("Tomi", 0))
+
+
+
+
+def count_d(sentence):
+    a = list(sentence)
+    s = a.count('D') + a.count('d')
+
+    return s
+print(count_d("My friend Dylan got distracted in school."))
+
+
+
+def space_me_out(s):
+
+    return ' '.join(c for c in s)
+
+print(space_me_out("space"))
+print(space_me_out("elongated musk"))
+
+
+def zip_it(women, men):
+    if len(women) != len(men):
+        return "sizes don't match"
+    else:
+        return list(zip(women,men))
+
+print(zip_it(["Elise", "Mary"], ["John", "Rick"]))
+print(zip_it(["Ana", "Amy", "Lisa"], ["Bob", "Josh"]))
+
+
+
+def int_within_bounds(n, lower, upper):
+
+    for x in range(lower,upper):
+        if n.isinstance(x,int) == True:
+            return False
+        else:
+            for n in x:
+                return True
+print(int_within_bounds(3, 1, 9))
+
+
+
+s = [[1,2,3,4,5],[6,3,4,1,2],[8,6,3,1,0,1]]
+
+a = s.insert(2,'what')
+print(s)
+
+
+
+
+add1 = lambda x : x+10
+print(add1(10))
+
+sub2 = lambda x,y : x*y
+print(sub2(2,-3))
+
+poun = [(2,5),(1,12),(6,20),(0,1)]
+print(poun)
+print(sorted(poun,key = lambda x:x[1]))
+
+
+
+def my_next_iter():
+    yield 25
+    yield "check"
+
+a = my_next_iter()
+print(a.__iter__())
+#print(a.__next__())
+
+#print(next(a))
+
+
+def myfibbocheck():
+    a,b = 0,1
+    while True:
+        yield a
+        a,b = b,a+b
+
+for f in myfibbocheck():
+    if f >50:
+        break
+    print(f)
+
+
+
+def highest_digit(num):
+    num = max(list(str(num)))
+    return num
+print(highest_digit(379))
+print(highest_digit(377401))
+
+
+
+def limit_number(num, range_low, range_high):
+
+    if num >= range_low and num <= range_high:
+        return num
+    if num < range_low:
+        return range_low
+    if num > range_high:
+        return range_high
+print(limit_number(5, 1, 10))
+print(limit_number(14, 1, 10))
+print(limit_number(4.6, 1, 10))
+
+
+
+def is_first_superior(lst1, lst2):
+    if lst1 >= lst2:
+        return True
+    else:
+        return False
+print(is_first_superior([1, 2, 4], [1, 2, 3]))
+print(is_first_superior(["zebra", "ostrich", "whale"], ["ant", "ostrich", "whale"]))
+print(is_first_superior([1, 2, 3, 4], [1, 2, 4, 4]))
+print(is_first_superior([True, 10, "zebra"], [True, 10, "zebra"]))
+
+
+
+def operation(num1, num2):
+	if num1+num2 ==24:
+		return "added"
+	if num1 - num2 == 24:
+		return "subtracted"
+	if num1 * num2 ==24:
+		return "multiplied"
+	if num1 / num2 ==24:
+		return "divided"
+	if num1 - num2 ==0:
+		return None
+print(operation(15, 9))
+print(operation(26, 2) )
+
+
+
+def volume_of_box(sizes):
+	result = 1
+	for y in sizes.values():
+		result = result *y
+	return result
+
+
+print(volume_of_box({ "width": 2, "length": 5, "height": 1 }) )
+print(volume_of_box({ "width": 4, "length": 2, "height": 2 }))
+
+
+# Fix this incorrect code, so that all tests pass!
+def minus_one(lst):
+	lst.pop()
+	return lst
+print(minus_one([2,3,4,6]))
+
+
+
+def search(lst, item):
+	if item in lst:
+		return lst.index(item)
+	else:
+		return -1
+
+print(search([1, 2, 3, 4], 3))
+print(search([2, 4, 6, 8, 10], 8))
+print(search([1, 3, 5, 7, 9], 11))
+
+
+
+
+def search(lst, item):
+
+	return lst.index(item) if item in lst else -1
+print(search([1, 2, 3, 4], 3))
+print(search([2, 4, 6, 8, 10], 8))
+print(search([1, 3, 5, 7, 9], 11))
+
+
+
+
+def first_one(a, b=None, c=None,d=None):
+	if bool (a) == True:
+		return a
+	elif bool(b) == True:
+		return b
+	elif bool(c) == True:
+		return c
+	elif bool(d) == True:
+		return d
+	else:
+		return "not found"
+
+
+
+def sum_even_nums_in_range(start, stop):
+	count = 0
+	for x in range (start , stop + 1):
+		if x % 2 == 0:
+			count = count + x
+
+	return count
+
+print(sum_even_nums_in_range(10, 20))
+print(sum_even_nums_in_range(51, 150))
+
+
+
+def is_leap(year):
+	if year % 400 ==0 or (year % 4 ==0 and year % 100 !=0):
+		return True
+	else:
+		return False
+print(is_leap(2020))
+print(is_leap(1800))
+print(is_leap(2000))
+print(is_leap(2019))
+
+
+
+def make_pair(num1, num2):
+	return list((num1,num2))
+print(make_pair(1, 2))
+
+
+def search(lst, item):
+	if item in lst:
+		return lst.index(item)
+	else:
+		return -1
+print(search([1, 5, 3], 5))
+print(search([9, 8, 3], 3))
+
+
+arr = ["eyes", "nose", "lips", "ears"]
+arr2 = arr[-2]
+print(arr2)
+
+
+
+def is_equal(num1, num2):
+	num1 = isinstance(int,num1)
+	num2 = isinstance(int, num2)
+
+
+	if num1 == num2:
+		return True
+	else:
+		return False
+print(is_equal(5, 6))
+print(is_equal(5, 5))
+
+
+
+def add_ending(lst, ending):
+	return [l + ending for l in lst]
+
+print(add_ending(["clever", "meek", "hurried", "nice"],'ly'))
+print(add_ending(["new", "pander", "scoop"], "er"))
+
+
+def reverse_title(txt):
+	return txt.title().swapcase()
+print(reverse_title("this is a title"))
+print(reverse_title("BOLD AND BRASH!"))
+
+def max_total(nums):
+	a = sorted(nums,reverse= True )
+	print(a)
+	b = sum(a[:5])
+	return b
+
+print(max_total([1, 1, 0, 1, 3, 10, 10, 10, 10, 1]))
+
+
+
+def list_to_string(lst):
+	a = ""
+	for i in lst:
+		a = a + str(i)
+	return a
+
+print(list_to_string([1, 2, 3, 4, 5, 6]))
+print(list_to_string(["a", "b", "c", "d", "e", "f"]))
+print(list_to_string([1, 2, 3, "a", "s", "dAAAA"]))
+
+
+
+def int_or_string(var):
+	if isinstance(var,int) == True:
+		return 'int'
+	elif isinstance(var,str)== True:
+		return 'str'
+
+
+print(int_or_string(8))
+print(int_or_string("Hello"))
+
+
+
+def int_within_bounds(n, lower, upper):
+	if n > lower and n <upper:
+		return True
+	else:
+		return False
+
+print(int_within_bounds(3, 1, 9))
+print(int_within_bounds(4.5, 3, 8))
+print(int_within_bounds(6, 1, 6))
+
+
+
+
+def free_shipping(order):
+	l = []
+	for y in order.values():
+		l.append(y)
+	a = sum(l)
+	if a > 50:
+		return True
+	else:
+		return False
+print(free_shipping({ "Shampoo": 5.99, "Rubber Ducks": 15.99 }) )
+print(free_shipping({ "Flatscreen TV": 399.99 }))
+
+
+
+def mystery_func(lst, n):
+	l = []
+	for x in lst:
+		a = x % n
+		l.append(a)
+	return l
+
+print(mystery_func([5, 7, 8, 2, 1], 2))
+
+
+def count_words(txt):
+	a = txt.split(" ")
+	return len(a)
+
+
+print(count_words("Just an example here move along"))
+print(count_words("This is a test"))
+
+
+
+def spotlight_sum(n):
+	a = (n + n + n + n + n + n + n + n + n)
+	return a
+
+print(spotlight_sum(45))
+print(spotlight_sum(19))
+print(spotlight_sum(88))
+
+def detect_word(txt):
+	txt = list(txt)
+	l = []
+	y = ""
+	for x in txt:
+		if x.islower() == True:
+			y = y + x
+	return y
+
+
+print(detect_word("UcUNFYGaFYFYGtNUH"))
+
+
+
+def squares_sum(n):
+	if n == 0:
+		return 0
+	else:
+		return n**2 + (squares_sum(n-1))
+
+print(squares_sum(3))
+print(squares_sum(12))
+
+
+
+
+def add_nums(nums):
+	return eval(nums.replace(',', ' +'))
+
+print(add_nums("2, 5, 1, 8, 4"))
+print(add_nums("1, 2, 3, 4, 5, 6, 7") )
+
+
+
+def city_facts(city):
+
+	return "{} has a population of {} and is situated in {}".format(city['name'], city['population'],
+																		city['continent'])
+print(city_facts({ 'name': "Paris",'population': "2,140,526",'continent': "Europe" }))
+
+
+
+
+def unlucky_13(nums):
+	l = []
+	for x in nums:
+		if x % 13 != 0:
+			l.append(x)
+	return l
+
+print(unlucky_13([53, 182, 435, 591, 637]) )
+
+
+
+def rev(n):
+
+	if n <0:
+		return n
+	else:
+		n = str(n)
+	return str(n[::-1])
+print(rev(5121))
+
+
+
+def capital_letters(txt):
+	txt = list(txt)
+	count = 0
+	for x in txt:
+		if x.isupper() == True:
+			count = count+ 1
+	return count
+print(capital_letters("fvLzpxmgXSDrobbgMVrc"))
+print(capital_letters("JMZWCneOTFLWYwBWxyFw"))
+
+
+
+def reverse_list(num):
+	n = list(str(num))
+	a = n[::-1]
+	l = []
+	for x in a:
+		#x = int(x)
+		l.append(int(x))
+	return l
+
+print(reverse_list(1485979))
+
+
+
+def number_squares(n):
+	if n == 0:
+		return 0
+	else:
+		return n * n + (number_squares(n-1))
+
+print(number_squares(2))
+print(number_squares(4))
+print(number_squares(5))
+
+
+
+def test_jackpot(result):
+	#a = list(set(result))
+	if len(list(set(result))) == 1:
+		return True
+	else:
+		return False
+
+print(test_jackpot(["@", "@", "@", "@"]))
+print(test_jackpot(["&&", "&", "&&&", "&&&&"]))
+
+
+
+def is_identical(s):
+
+	return True if len(set(s)) == 1 else False
+
+print(is_identical("aaaaaa") )
+print(is_identical("aabaaa"))
+
+
+def remove_first_last(txt):
+	if len(txt) <=2:
+		return txt
+	else:
+		return txt[1:-1]
+print(remove_first_last("hello"))
+print(remove_first_last("maybe"))
+print(remove_first_last("ab"))
+
+
+
+
+def countdown(start):
+	if start == 0:
+		return [0]
+	else:
+		l = []
+
+	for x in range(start+1):
+		l.append(x)
+		#a = l.sort(reverse= True)
+	return (sorted(l,reverse= True))
+print(countdown(5))
+print(countdown(1))
+print(countdown(0))
+
+
+def inches_to_feet(inches):
+
+	return 0 if inches < 12 else int(inches /12)
+
+print(inches_to_feet(324))
+print(inches_to_feet(12))
+print(inches_to_feet(36))
+
+
+
+def minimum_removals(lst):
+
+	if sum(lst) % 2 == 0:
+		return 0
+	else:
+		return 1
+
+print(minimum_removals([1, 2, 3, 4, 5]))
+print(minimum_removals([5, 7, 9, 11]))
+print(minimum_removals([5, 7, 9, 12]))
+
+
+
+def pH_name(pH):
+	if pH < 0 or pH >14:
+		return "invalid"
+	elif pH >0 and pH <6:
+		return "acidic"
+	elif pH == 7:
+		return "neutral"
+	elif pH <8 and  pH > 14:
+		return "alkaline"
+
+print(pH_name(5))
+print(pH_name(8.7))
+print(pH_name(7))
+print(pH_name(15))
+print(pH_name(0.7))
+
+
+
+def count_unique(s1, s2):
+	#a = s1+s2
+	return len(set(s1+s2.lower()))
+print(count_unique("apple", "play"))
+
+
+
+def factorize(num):
+
+	return [x for x in range(1,num+1) if num %x ==0]
+print(factorize(12))
+print(factorize(4))
+
+
+def get_decimal_places(n):
+	a = n.find('.')
+	return len(n[a:-1])
+
+print(get_decimal_places("43.20"))
+print(get_decimal_places("400"))
+print(get_decimal_places("3.1"))
+
+
+def sum_of_cubes(nums):
+	return sum(n **3 for n in nums)
+
+
+print(sum_of_cubes([1, 5, 9]))
+print(sum_of_cubes([3, 4, 5]))
+print(sum_of_cubes([]))
+
+
+
+def reverse(txt):
+	return txt[::-1]
+print(reverse("Hello World"))
+print(reverse("The quick brown fox."))
+
+
+def get_extension(lst):
+	l = []
+	for x in lst:
+		a = x.find(".")
+		b =x[a+1:]
+		l.append(b)
+	return l
+print(get_extension(["code.html", "code.css"]))
+print(get_extension(["project1.jpg", "project1.pdf", "project1.mp3"]))
+
+
+
+def hurdle_jump(hurdles, jump_height):
+	for x in hurdles:
+		if jump_height > x:
+			return True
+		else:
+			return False
+
+print(hurdle_jump([1, 2, 3, 4, 5], 5))
+print(hurdle_jump([1, 2, 1], 1))
+print(hurdle_jump([5, 5, 3, 4, 5], 3))
+
+
+import re
+pattern = '^a ...s$'
+test = 'abyss'
+res = re.match(pattern,test)
+if res:
+  print("Search successful.")
+else:
+  print("Search unsuccessful.")
+
+
+
+def myfun():
+
+    return 2
+print(myfun.__doc__)
+
+
+def can_capture(rooks):
+    return rooks[0][0] == rooks[1][0] or rooks[0][1] == rooks[1][1]
+
+print(can_capture(["A8", "E8"]))
+print(can_capture(["A1", "B2"]))
+
+
+
+def is_anagram(s1, s2):
+    return sorted(s1.lower()) == sorted(s2.lower())
+
+print(is_anagram("cristian", "Cristina"))
+print(is_anagram("Nope", "Note") )
+print(is_anagram("Dave Barry", "Ray Adverb"))
+
+
+
+def filter_digit_length(lst, num):
+
+   return [i for i in lst if len(str(i)) == num]
+
+
+
+print(filter_digit_length([88, 232, 4, 9721, 555], 3))
+print(filter_digit_length([32, 88, 74, 91, 300, 4050], 1))
+
+
+
+def retrieve_major(semver):
+    a = semver.split('.')
+    return a[0]
+
+def retrieve_minor(semver):
+	a = semver.split('.')
+        return a[1]
+
+def retrieve_patch(semver):
+	a = semver.split('.')
+        return a[2]
+
+
+
+
+
+def MultiplyByLength(arr):
+    #l = len(arr)
+    return [x*len(arr) for x in arr]
+
+
+print(MultiplyByLength([2, 3, 1, 0]))
+print(MultiplyByLength([0]))
+
+
+
+def check_factors(factors, num):
+    for x in factors:
+
+print(check_factors([2, 3, 4], 12))
+
+
+
+def calc_age(age):
+    return age * 365
+print(calc_age(65))
+
+
+
+def sorty(ele):
+    l = len(ele)
+
+    for x in range(l-1):
+        for y in range(l-1):
+            if ele[y] > ele[y+1]:
+                ele[y],ele[y+1] = ele[y+1],ele[y]
+
+
+if __name__ == '__main__':
+    ele = [5, 7, 2, 88, 22, 54, 1]
+
+sorty(ele)
+print(ele)
+
+
+
+def triangle(n):
+    a = int(n * (n + 1)/2)
+    return a
+print(triangle(1))
+print(triangle(215))
+
+
+
+
+def mirror(lst):
+    a = lst[::-1]
+    b = lst + a[1:]
+    return b
+print(mirror([0, 2, 4, 6]))
+print(mirror([1, 2, 3, 4, 5]))
+
+
+
+def subset(lst1, lst2):
+    l1,l2 = set(lst1),set(lst2)
+    if l1.issubset(l2) == True:
+        return True
+    else:
+        return False
+
+print(subset([1, 3], [1, 3, 3, 5]))
+print(subset([1, 3], [1, 33]) )
+
+
+def to_array(txt):
+    l =[]
+    for x in len():
+        l.append(x)
+        #print(x)
+    return l
+
+print(to_array("watermelon, raspberry, orange"))
+
+
+
+def get_triangle_type(lst):
+
+    if len(lst) > 3:
+        return 'not a triangle'
+    elif len(lst) == 3 and lst[0] != lst[1] and lst[1] != lst[2]:
+        return 'scalene'
+    elif len(lst) == 3 and lst[0] == lst[1] and lst[1] == lst[2]:
+        return 'equilateral'
+    elif len(set(lst)) == 2 and lst[0] == lst[1] or lst[0] == lst[2]:
+        return 'isosceles'
+
+
+print(get_triangle_type([2, 6, 5]))
+print(get_triangle_type([4, 4, 7]))
+print(get_triangle_type([3, 5, 5, 2]))
+print(get_triangle_type([8, 8, 8]))
+
+
+def cpp_txt(lst):
+    s = ' '
+    return s.join(lst[:-1]).strip()
+print(cpp_txt(["H", "i", "!", "\0"]))
+print(cpp_txt(["H", "e", "l", "l", "o", "!", "\0"]))
+
+
+
+
+def is_valid(zip_code):
+    if zip_code.isdigit() == True and zip_code.isnumeric() == True and len(zip_code) == 5:
+        return True
+    else:
+        return False
+
+print(is_valid("59001") )
+print(is_valid("853a7"))
+print(is_valid("732 32"))
+
+def owofied(sentence):
+    return sentence.replace('i','wi').replace('e','we') + ' owo'
+
+
+print(owofied("I'm gonna ride 'til I can't no more"))
+
+def not_not_not(n, b):
+
+    return b if n %2 == 0 else not b
+
+print(not_not_not(1, True))
+print(not_not_not(2, False))
+print(not_not_not(6, True))
+
+
+
+def is_potential_friend(set1, set2):
+    s = set1.intersection(set2)
+    return True if len(s) >=2 else False
+
+print(is_potential_friend({"sports", "music", "chess"},{"coding", "music", "netflix", "chess"}))
+print(is_potential_friend(
+  {"cycling", "technology", "drawing"},
+  {"dancing", "drawing"}))
+
+print(is_potential_friend(
+  {"history"},
+  {"history"}))
+
+
+
+def identical_filter(lst):
+    l = []
+    for x in lst:
+        s = set(x)
+        if len(s) == 1:
+            l.append(x)
+    return l
+
+print(identical_filter(["aaaaaa", "bc", "d", "eeee", "xyz"]))
+print(identical_filter(["88", "999", "22", "545", "133"]))
+print(identical_filter(["xxxxo", "oxo", "xox", "ooxxoo", "oxo"]))
+
+
+
+def smaller_num(n1, n2):
+
+    a = sorted((n1,n2))
+    return min(a)
+
+
+print(smaller_num("21", "44"))
+print(smaller_num("1500", "1"))
+print(smaller_num("5", "5"))
+
+
+
+def repeat(item, times):
+	return [item ]* times
+print(repeat("edabit", 3))
+
+
+
+
+def exists_higher(lst, n):
+
+	if len(lst) == 0:
+		return False
+	if max(lst) >= n:
+		return True
+	else:
+		return False
+
+print(exists_higher([5, 3, 15, 22, 4], 10))
+print(exists_higher([1, 2, 3, 4, 5], 8))
+print(exists_higher([4, 3, 3, 3, 2, 2, 2], 4))
+print(exists_higher([], 5))
+
+
+
+def mod(a, b):
+	return int(a%b)
+print(mod(5,  2))
+print(mod(218, 5))
+
+
+from math import pi
+def my_pi(n):
+	return round(pi,n)
+print(my_pi(5))
+print(my_pi(15))
+
+
+
+def has_hidden_fee(prices, t):
+	l = []
+	t1 = int(t[1])
+	for x in prices:
+		a = int(x[1])
+		l.append(a)
+	#return sum(l)
+
+	if sum(l) < t1:
+		return True
+	else:
+		return False
+
+print(has_hidden_fee(["$2", "$4", "$1", "$8"], "$15"))
+print(has_hidden_fee(["$1", "$2", "$3"], "$6"))
+print(has_hidden_fee(["$1"], "$4"))
+
+
+
+
+def remove_none(lst):
+	l = []
+	for x in lst:
+		if x == None:
+			lst.remove(x)
+	return lst
+print(remove_none(["a", None, "b", None]))
+print(remove_none([None, None, None, None, None]))
+print(remove_none([7, 8, None, 9]))
+
+
+
+def middle_earth(lst):
+	a = lst.index('Sam')
+	b = lst.index('Frodo')
+	if b == a + 1 or b == a-1:
+		return True
+	else:
+		return False
+
+
+
+print(middle_earth(["Frodo", "Sam", "Gandalf"]))
+print(middle_earth(["Frodo", "Saruman", "Sam"]))
+print(middle_earth(["Orc", "Sam", "Frodo", "Legolas"]))
+
+
+
+def imposter_formula(i, p):
+    return str (round(100 * (i/p)) ) + '%'
+
+print(imposter_formula(1, 10))
+print(imposter_formula(2, 5))
+print(imposter_formula(1, 8))
+
+
+
+def accept_into_movie(age, is_supervised):
+    return True if age >= 15 or is_supervised == True else False
+print(accept_into_movie(14, True))
+print(accept_into_movie(14, False))
+print(accept_into_movie(16, False))
+
+
+
+def calc_determinant(matrix):
+    return matrix[0][0] * matrix[1][1] - matrix[1][0] * matrix[0][1]
+
+print(calc_determinant([[1, 2],  [3, 4]]))
+print(calc_determinant([[5, 3],[3, 1]]))
+print(calc_determinant([[1, 1],[1, 1]]))
+
+
+
+def even_odd_partition(lst):
+    e = []
+    o = []
+    for x in lst:
+        if x %2 ==0:
+            e.append(x)
+        else:
+            o.append(x)
+
+    return [e,o]
+
+print(even_odd_partition([5, 8, 9, 2, 0]))
+print(even_odd_partition([1, 0, 1, 0, 1, 0]))
+print(even_odd_partition([1, 3, 5, 7, 9]))
+print(even_odd_partition([]))
+
+
+
+
+def repeat(txt, n):
+    a = ''
+
+    for x in txt:
+        a = a + x*n
+    return a
+print(repeat("mice", 5))
+print(repeat("hello", 3))
+print(repeat("stop", 1))
+
+
+
+def count_ones(matrix):
+    return sum(x.count(1) for x in matrix)
+
+print(count_ones([ [1, 0],  [0, 0]]))
+print(count_ones([
+  [1, 1, 1],
+  [0, 0, 1],
+  [1, 1, 1]
+]))
+
+
+def sub_reddit(link):
+    a = link.split('/')
+    return a[-2]
+
+print(sub_reddit("https://www.reddit.com/r/funny/") )
+print(sub_reddit("https://www.reddit.com/r/relationships/"))
+
+
+
+def transform(lst):
+
+    return [x - 1 if x % 2 == 0 else x + 1 for x in lst]
+
+print(transform([1, 2, 3, 4, 5]))
+print(transform([3, 3, 4, 3]))
+
+
+
+
+def after_n_years(names, n):
+    s = {}
+    for x in range(len(names)):
+        for x,y in names.items():
+
+            return {x,y+n}
+
+print(after_n_years({
+  "Joel" : 32,
+  "Fred" : 44,
+  "Reginald" : 65,
+  "Susan" : 33,
+  "Julian" : 13
+}, 1))
+
+
+
+def largest_swap(num):
+
+    num = int(input('enter num'))
+    print(type(num))
+    s = num[::-1]
+    print(s,type(s))
+    if num > num:
+        return True
+    else:
+        return False
+
+print(largest_swap(14))
+print(largest_swap(53))
+
+
+
+def sum_found_indexes(lst, n):
+    i = []
+    for x in lst:
+        if n == x:
+            a = lst.index(x)
+            i.append(a)
+    return i
+
+print(sum_found_indexes([0, 3, 3, 0, 0, 3], 3))
+
+
+
+
+class Rectangle:
+
+    def __init__(self, sideA=0, sideB=0):
+        self.sideA = sideA
+        self.sideB = sideB
+
+    def getArea(self):
+        return self.sideA * self.sideB
+
+    def getPerimeter(self):
+        return 2 * (self.sideA + self.sideB)
+
+
+class Circle(Rectangle):
+
+
+
+a = [(m*m) + 2 for m in range(0,10,2)]
+print(a)
+
+
+
+a = [x if x % 2 ==0 else x*5 for x in range(20)]
+print(a)
+
+
+
+mat = [[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,16]]
+
+l = []
+for x in mat:
+    for y in x :
+      if y %2 ==0:
+          l.append(y)
+
+#print(l)
+
+l = [y for x in mat for y in x if y%2 ==0]
+print(l)
+
+
+
+list_a = [9, 3, 6, 1, 5, 0, 8, 2, 4, 7]
+list_b = [6, 4, 6, 1, 2, 2]
+
+r = []
+for i in list_b:
+    r.append((i,list_a.index(i)))
+
+print(r)
+
+
+
+
+mylist = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+r = [-x if x >=3 and x <=8 else x for x in mylist ]
+print(r)
+
+
+import string
+i = {a:i+1 for a,i in zip(string.ascii_letters[:26],range(26))}
+print(i)
+
+
+
+def index_shuffle(txt):
+    a = txt[0::2]
+    b = txt[1::2]
+    return a + b
+print(index_shuffle("abcdefg"))
+print(index_shuffle("holiday"))
+print(index_shuffle('i a a eauiu atwsbtfldy'))
+
+
+
+def filter_unique(lst):
+    l = []
+    for x in lst:
+        x1 = set(x)
+        print('x1 is ', x1)
+        if len(x) == len(x1):
+            l.append(x)
+    return l
+
+print(filter_unique(["abb", "abc", "abcdb", "aea", "bbb"]))
+print(filter_unique(["88", "999", "989", "9988", "9898"]) )
+print(filter_unique(["ABCDE", "DDEB", "BED", "CCA", "BAC"]))
+
+
+
+def divisible(lst):
+    r = 1
+    for x in lst:
+        r = r * x
+    #print(r)
+    s = sum(lst)
+    #print(s)
+    if r % s == 0 :
+        return True
+    else:
+        return False
+
+
+
+print(divisible([4, 2, 6]))
+print(divisible([3, 2, 4, 2]))
+print(divisible([3, 5, 1]))
+
+
+
+
+def is_prefix(word, prefix):
+    a = word[:4]
+    if a in prefix:
+        return True
+    else:
+        return False
+
+
+def is_suffix(word, suffix):
+    b = word[-3:]
+    if b in suffix:
+        return True
+    else:
+        return False
+
+print(is_prefix("automation", "auto-"))
+print(is_suffix("arachnophobia", "-phobia") )
+print(is_prefix("retrospect", "sub-"))
+print(is_suffix("vocation", "-logy"))
+
+
+
+
+def strip_sentence(txt, chars):
+    for x in chars:
+        txt = txt.replace(x, " ")
+    return txt
+
+print(strip_sentence("the quick brown fox jumps over the lazy dog", "aeiou"))
+
+
+
+def is_palindrome(n):
+
+
+print(is_palindrome(838))
+print(is_palindrome(4433))
+print(is_palindrome(443344))
+
+
+
+
+import matplotlib.pyplot as plt
+
+#%matplotlib inline
+x = [1,2,3,4,5,6,7]
+y = [50,51,52,48,47,49,46]
+
+a = plt.plot(x,y)
+a.
+
+
+def clone(lst):
+
+	lst.append(lst[:])
+	return lst
+print(clone([1, 1]))
+
+
+
+# Fix this incorrect code, so that all tests pass!
+def remove_vowels(string):
+    vowels = "aeiou"
+    for vowel in vowels:
+        string = string.replace(vowel, "")
+    return string
+
+print(remove_vowels("ben"))
+print(remove_vowels("hell"))
+
+
+
+def max_num(n1, n2):
+    if n1 < n2:
+	    return n2
+    else:
+	    return n1
+
+print(max_num(3, 7))
+
+
+
+def is_boiling(temp):
+    if temp == "212F" or temp == '100C' :
+        return True
+    else:
+        return False
+
+
+def odd_product(lst):
+    o = []
+    for x in lst:
+        if x % 2 != 0:
+            o.append(x)
+    r = 1
+    for y in o:
+        r = r * y
+    return r
+print(odd_product([3, 4, 1, 1, 5]))
+
+
+
+def is_omnipresent(lst, val):
+    for x in lst:
+        for y in x:
+            if val ==y:
+                return True
+            else:
+                return False
+print(is_omnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 1))
+print(is_omnipresent([[1, 1], [1, 3], [5, 1], [6, 1]], 6))
+
+
+
+def is_avg_whole(arr):
+    avg = sum(arr) / len(arr)
+    return avg.is_integer()
+
+print(is_avg_whole([1, 3]))
+print(is_avg_whole([1, 2, 3, 4]))
+
+
+def is_four_letters(lst):
+   return [l for l in lst if len(l) ==4]
+
+print(is_four_letters(["Tomato", "Potato", "Pair"]))
+print(is_four_letters(["Ryan", "Kieran", "Jason", "Matt"]))
+
+
+
+import random
+def random_int(a, b):
+   return random.randint(a,b)
+
+
+print(random_int(5, 9))
+
+
+def check_ending(str1, str2):
+   s = len(str2)
+   return (True if str1[-s:] == str2 else False)
+
+print(check_ending("abc", "bc") )
+print(check_ending("samurai", "zi"))
+print(check_ending("feminine", "nine"))
+
+
+
+def sum_found_indexes(lst, n):
+    l = []
+    for x in lst:
+        if n == x:
+          l.append(x.index())
+    return l
+
+
+
+def get_abs_sum(lst):
+    a = 0
+    for x in lst:
+        a = a + abs(x)
+
+    return a
+
+print(get_abs_sum([2, -1, 4, 8, 10]))
+print(get_abs_sum([-3, -4, -10, -2, -3]))
+
+
+
+def parse_list(lst):
+    #x = str(input(" enter randome value"))
+    for x in lst:
+        x = str(x)
+
+        return x
+
+print(parse_list([1, 2, "a", "b"]))
+
+
+
+def amazing_edabit(s):
+    x = 'edabit'
+    if x in s:
+        return s
+    else:
+        return s.replace('is', 'is not')
+print(amazing_edabit("edabit is amazing."))
+print(amazing_edabit("Mubashir is amazing."))
+
+
+
+def area(h, w):
+    if h < 1 or w < 1:
+        return -1
+    else:
+        return h * w
+
+print(area(3, 4))
+print(area(0, 2))
+print(area(-1, 5))
+
+
+
+def element_from_set(s):
+    for x in s:
+        return x
+print(element_from_set({"edabit"}))
+print(element_from_set({True}))
+print(element_from_set({11037}))
+
+
+
+ 
+
+
+def greeting(name):
+    if name == "mubashir":
+        return "Hello, my Love!"
+    else:
+        return "Hello, " + name + "!"
+
+print(greeting("Matt"))
+print(greeting("Mubashir"))
+
+
+def parse_code(txt):
+    dic = {}
+    s = txt.split('0')
+    d = []
+    for a in s:
+        if a !='':
+            d.append(a)
+
+    return { "first_name" :d[0],
+             "last_name" : d[1],
+             "id" :d[2]
+
+    }
+print(parse_code("John000Doe000123"))
+
+
+
+def special_reverse(s, c):
+
+    d = s.split(' ')
+    for x in d:
+        if x[0] == c:
+            s = s.replace(x,x[::-1])
+    return s
+
+
+print(special_reverse("word searches are super fun", "s"))
+print(special_reverse("first man to walk on the moon", "m"))
+
+
+
+def split(txt):
+    c = ''
+    v = ''
+    for x in txt:
+        if x in 'aeiou':
+            v = v + x
+        else:
+            c = c + x
+
+    return v + c
+
+print(split("abcde"))
+print(split("Hello!"))
+print(split("What's the time?"))
+
+
+
+def two_digit_sum(n):
+    n = str(n)
+    e = int(n[0]) + int(n[1])
+    return e
+
+print(two_digit_sum(45))
+print(two_digit_sum(67))
+print(two_digit_sum(38))
+
+"----------------Dash"
+"*******Starry*******"
+
+
+print("Best score{:->15}".format('AAA'))
+print("{:->20}".format('Dash'))
+print("{:*^20}".format('Starry'))
+print("{:$<20}".format('Money'))
+
+
+def emotify(txt):
+
+    d = {'smile': ':D','grin':':)','sad':':(','mad':':P'}
+    for x , y in d.items():
+        if x in txt:
+            txt = txt.replace(x,y)
+    return txt
+
+print(emotify("Make me smile"))
+print(emotify("Make me grin"))
+
+
+
+
+
+def high_low(txt):
+    txt = list(txt)
+    l = []
+    for x in txt:
+        if x.isnumeric()== True or x.isalpha()== True:
+            l.append(int(x))
+    #return l
+    a = str(l[0])
+    b = str(l[-1])
+    return a + b
+
+print(high_low("1 2 3 4 5"))
+
+
+import math
+def solve_for_exp(a, b):
+    return round(math.log(b, a))
+
+
+
+print(solve_for_exp(4, 1024))
+print(solve_for_exp(2, 1024))
+print(solve_for_exp(9, 3486784401))
+
+
+
+
+def worm_length(worm):
+    s = set(worm)
+    l = len(worm)
+    #print(l)
+    if len(s) >= 2 or len(worm) ==0:
+        return "invalid"
+    else:
+        d = l * 10
+        return str(d) + 'mm'
+
+
+print(worm_length("---_-___---_"))
+print(worm_length("----------"))
+print(worm_length(""))
+
+
+
+def get_discounts(nums, d):
+    d = list(d)
+    e = []
+    for a in d:
+        e.append(int(a))
+    print(e)
+
+    s = int(e[:2])
+    #s = int(s)
+    return [int(x) * s/100 for x in nums]
+
+
+print(get_discounts([2, 4, 6, 11], "50%"))
+print(get_discounts([10, 20, 40, 80], "75%"))
+print(get_discounts([100], "45%"))
+
+
+#re.findall("a{1,3}", "caandy") ➞ ["aa"]
+import re
+txt = "Hello!... Wait. How goes?..... GoodBye!.."
+
+pattern = "yourregularexpressionhere"
+print(re.findall("\.{3,} ",txt))
+
+
+
+def dis(price, discount):
+    a = price * (discount /100)
+    return round(a,2)
+
+print(dis(1500, 50))
+print(dis(89, 20) )
+print(dis(100, 75))
+
+
+def div1(x,y):
+    print("%s/%s = %s" % (x, y, x / y))
+
+
+print(div1(5,2))
+print(div1(5.,2))
+
+
+
+
+def can_see_stage(seats):
+
+
+    #
+    # for x in seats:
+    #     if x[0][0] < x[1][0] < x[2][0] and x[0][1] < x[1][1] < x[2][2] and x[0][2] < x[1][2 ] < x[2][2] == True:
+    #         return True
+    #     return False
+
+print(can_see_stage([
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9]
+]))
+
+{:$<20}
+
+
+def retrieve(txt):
+    v = ['a','e','i','o','u','A','E','I','O','U']
+    t = txt.split()
+    final = []
+    for x in t:
+        if x[0] in v:
+            final.append(x.lower().strip('.'))
+    return final
+
+print(retrieve("A simple life is a happy life for me."))
+print(retrieve("Exercising is a healthy way to burn off energy."))
+print(retrieve("The poor ostrich was ostracized."))
+print(retrieve(""))
+
+
+def challenge1(s):
+	return s[:5]
+
+def challenge2(s):
+	return s[-5:]
+
+def challenge3(s):
+	return s[::-1]
+
+def challenge4(s):
+	return s[:6][::-1]
+split
+def challenge5(s):
+	return s[-7::2]
+
+print(challenge1("abcdefghijklmnopqrstuvwxyz"))
+print(challenge2("abcdefghijklmnopqrstuvwxyz"))
+print(challenge3("abcdefghijklmnopqrstuvwxyz"))
+print(challenge4("abcdefghijklmnopqrstuvwxyz"))
+print(challenge5("abcdefghijklmnopqrstuvwxyz"))
+
+
+
+
+def rgb_or_hex(*args):
+    l = []
+    for x in args:
+        l.append(hex(x))
+    return ''.join(l)
+
+print(rgb_or_hex(150, 50, 76))
+
+
+def get_only_evens(nums):
+
+    l = []
+    for x , y in enumerate(nums):
+        if x % 2 ==0 and y % 2 ==0:
+            l.append(x)
+    return l
+
+print(get_only_evens([1, 3, 2, 6, 4, 8]))
+print(get_only_evens([0, 1, 2, 3, 4]))
+
+
+import math
+def number_split(n):
+
+   a = math.floor(n/2)
+   b = math.ceil(n/2)
+   return [a,b]
+
+print(number_split(4) )
+print(number_split(11))
+
+
+def sort_descending(num):
+    num = list(str(num))
+    num= sorted(num,reverse= True)
+
+    a = ''.join(num)
+    return int(a)
+print(sort_descending(123))
+print(sort_descending(1254859723))
+print(sort_descending(73065))
+
+
+
+def index_filter(indexes, string):
+
+    string_li = list(string)
+    a = list(map(lambda x:))
+    return a.lower()
+
+print(index_filter([2, 3, 8, 11], "Autumn in New York"))
+print(index_filter([0, 1, 5, 7, 4, 2], "Cry me a river"))
+print(index_filter([9, -9, 2, 27, 36, 6, 5, 13, -1, 2, 0, 30, 2],
+  "That's life, I've got you under my skin"))
+
+
+def tetra(n):
+    return int((n * (n + 1) * (n + 2)) / 6)
+
+print(tetra(2))
+print(tetra(5) )
+
+
+
+def maskify(txt):
+    l = len(txt)
+    tot = l-4
+    t = txt[-4:]
+    if l == 0:
+        return '""'
+    if l <= 4:
+        return txt
+    else:
+       a = '#'* tot
+    return a + t
+
+
+print(maskify("4556364607935616"))
+print(maskify("64607935616"))
+print(maskify("1"))
+print(maskify(""))
+
+
+
+import sys
+ran_list = ['1',0,2]
+
+for element in ran_list:
+    try:
+        print('first element is ' , element)
+        d = 1/ int(element)
+        break
+    except:
+
+
+def ohms_law(v, r, i):
+
+    if v == r == None or v == i == None or r == i == None:
+        return "Invalid"
+    elif v != None and i != None and r != None:
+        return "Invalid"
+
+    elif v == None:
+        return (round(r * i,2))
+    elif r == None:
+        return (round(v/i,2))
+    elif i == None:
+        return (round(v/r,2))
+
+print(ohms_law(12, 220, None))
+print(ohms_law(230, None, 2) )
+print(ohms_law(None, 220, 0.02))
+print(ohms_law(None, None, 10))
+print(ohms_law(500, 50, 10))
+
+
+
+def get_frequencies(lst):
+    se = sorted(set(lst))
+    le_se = len(se)
+    l = {}
+    if len(lst)== 0:
+        return {}
+    else:
+        for x in se:
+            a =lst.count(x)
+            l[x] = a
+
+    return l
+
+print(get_frequencies(["A", "B", "A", "A", "A"]))
+print(get_frequencies([1, 2, 3, 3, 2]))
+print(get_frequencies([True, False, True, False, False]))
+print(get_frequencies([]))
+
+
+
+
+
+from functools import reduce
+def multiply_nums(nums):
+
+    a = reduce((lambda x: x * x),nums)
+    return a
+print(multiply_nums("2, 3"))
+print(multiply_nums("1, 2, 3, 4"))
+print(multiply_nums("54, 75, 453, 0"))
+print(multiply_nums("10, -2"))
+
+
+def get_only_evens(nums):
+
+    l = []
+    for x , y in enumerate(nums):
+        if x % 2 ==0 and y % 2 ==0:
+            l.append(y)
+    return l
+
+print(get_only_evens([1, 3, 2, 6, 4, 8]))
+print(get_only_evens([0, 1, 2, 3, 4]))
+
+
+def in_box(lst):
+
+    return any('*' in row for row in lst)
+
+print(in_box(["###","#*#","###"]))
+
+
+
+
+def construct_fence(p):
+    a = p[1:]
+    b =a.replace(',','')
+    c = 1000000/int(b)
+    return int(c) * 'H'
+
+
+print(construct_fence("$50,000"))
+print(construct_fence("$100,000"))
+print(construct_fence("$1,000,000"))
+
+
+def get_xp(d):
+    for x,y in d.items():
+        if x == 'Very Easy':
+            a =y * 5
+        if x == 'Easy':
+            b = y * 10
+        if x == 'Medium':
+            c = y * 20
+        if x == 'Hard':
+            d = y * 40
+        if x == 'Very Hard':
+            e= y * 80
+    f = (a+b+c+d+e)
+    return str(f) + 'XP'
+
+
+print(get_xp({
+  "Very Easy" : 89,
+  "Easy" : 77,
+  "Medium" : 30,
+  "Hard" : 4,
+  "Very Hard" : 1
+}))
+
+print(get_xp({
+  "Very Easy" : 254,
+  "Easy" : 32,
+  "Medium" : 65,
+  "Hard" : 51,
+  "Very Hard" : 34
+}))
+
+print(get_xp({
+  "Very Easy" : 11,
+  "Easy" : 0,
+  "Medium" : 2,
+  "Hard" : 0,
+  "Very Hard" : 27
+}))
+
+
+def longest_zero(s):
+
+    if '0' not in s:
+        return '""'
+    else:
+        d = s.split('1')
+        d.sort(key=len)
+        return d[-1]
+
+print(longest_zero("01100001011000"))
+print(longest_zero("100100100"))
+print(longest_zero("11111"))
+
+
+
+def hacker_speak(txt):
+    if 'a' in txt:
+        txt = txt.replace('a','4')
+    if 'e' in txt:
+        txt = txt.replace('e', '3')
+    if 'i' in txt:
+        txt = txt.replace('i', '1')
+    if 'o' in txt:
+        txt = txt.replace('o', '0')
+
+    if 's' in txt:
+        txt = txt.replace('s', '5')
+
+    return txt
+
+
+print(hacker_speak("javascreipt is cool") )
+print(hacker_speak("programming is fun"))
+print(hacker_speak("become a coder"))
+
+
+import math
+def factor_group(num):
+    if math.sqrt(num) % 1 == 0:
+        return "odd"
+    else:
+        return "even"
+
+print(factor_group(33))
+print(factor_group(36))
+print(factor_group(7))
+
+
+def sum_two_smallest_nums(lst):
+    new_l = []
+    for x in lst:
+        if x > 0:
+            new_l.append(x)
+
+    a = sorted(new_l)
+    print(a)
+    return sum(a[0:2])
+
+print(sum_two_smallest_nums([19, 5, 42, 2, 77]))
+print(sum_two_smallest_nums([2, 9, 6, -1]))
+print(sum_two_smallest_nums([10, 343445353, 3453445, 3453545353453]))
+print(sum_two_smallest_nums([879, 953, 694, -847, 342, 221, -91, -723, 791, -587]))
+
+
+def sum_neg(lst):
+    neg_list = []
+    pos_list = []
+    if len(lst) ==0:
+        return []
+    else:
+        for x in lst:
+            if x >0:
+                pos_list.append(x)
+            else:
+                neg_list.append(x)
+
+        return [len(pos_list),sum(neg_list)]
+
+print(sum_neg([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
+print(sum_neg([92, 6, 73, -77, 81, -90, 99, 8, -85, 34]))
+print(sum_neg([91, -4, 80, -73, -28]))
+print(sum_neg([]))
+
+
+
+def total_overs(balls):
+    a,b = divmod(balls,6)
+
+    return a + b /10
+
+
+print(total_overs(2400))
+print(total_overs(164))
+print(total_overs(945))
+print(total_overs(5))
+
+
+def int_to_str(num):
+    return str(num)
+
+def str_to_int(num):
+    return int(num)
+
+print(int_to_str(4))
+print(str_to_int("4"))
+print(int_to_str(29348))
+
+
+
+def to_binary(num):
+    a = bin(num)
+    return a[2:]
+print(to_binary(0xFF))
+print(to_binary(0xAA))
+print(to_binary(0xFA))
+
+
+
+class Calculator:
+# Write methods to add(), subtract(), multiply() and divide()
+
+    def add(self,x,y):
+        added = x + y
+        return added
+
+
+    def subtract(self,x, y):
+        sub = x - y
+        return sub
+
+
+    def multiply(self,x, y):
+        mult = x * y
+        return mult
+
+
+    def divide(self,x, y):
+        div = x / y
+        return div
+
+
+calculator = Calculator()
+print(calculator.divide(10,5))
+
+
+
+def format_date(date):
+    a,b,c = date.split("/")
+    #print(a,b,c)
+    return c+b+a
+
+print(format_date("11/12/2019"))
+
+
+import math
+def jay_and_bob(txt):
+    if txt == 'half':
+        return str(math.floor(round(28.3495 /2,1))) + ' grams'
+    if txt == 'quarter':
+        return str(math.floor(round(28.3495 / 4, 1))) + ' grams'
+    if txt == 'eighth':
+        return str(round(28.3495/ 8, 1)) + ' grams'
+
+print(jay_and_bob("half") )
+print(jay_and_bob("quarter"))
+print(jay_and_bob("eighth"))
+
+
+def to_dict(lst):
+    l = []
+    for x in lst:
+        l.append({x : ord(x)})
+    return l
+
+print(to_dict(["a", "b", "c"]))
+print(to_dict([]))
+print(to_dict(["^"]))
+
+
+def add(n1, n2):
+    if n1 == None or n1 == "" or n2 == None or n2 == "":
+        return "Invalid Operation"
+
+    else:
+        return str(int(n1) + int(n2))
+
+print(add("", "20"))
+print(add("10", "80"))
+print(add("111", "111"))
+
+
+def profit(info):
+    a = info["cost_price"] * info["inventory"]
+    b = info["sell_price"] * info["inventory"]
+    return round(b-a)
+
+
+print(profit({"cost_price": 32.67, "sell_price": 45.00, "inventory": 1200}))
+print(profit({"cost_price": 225.89,"sell_price": 550.00,"inventory": 100}))
+print(profit({
+  "cost_price": 2.77,
+  "sell_price": 7.95,
+  "inventory": 8500
+}))
+
+
+
+import re
+txt = "242Edabit2345can3443be3254324addictive!"
+pattern = "\D+"
+
+print(" ".join(re.findall(pattern, txt)))
+print(txt)
+
+
+import math
+def shift_to_right(x, y):
+    return math.floor(x/2**y)
+
+print(shift_to_right(80, 3))
+print(shift_to_right(-24, 2))
+print(shift_to_right(3777, 6))
+
+
+def normalize(txt):
+   if txt.isupper() == True:
+       return txt + '!'
+   return txt
+
+
+print(normalize("CAPS LOCK DAY IS OVER"))
+print(normalize("Today is not caps lock day."))
+
+
+def has_syncopation(s):
+    if '#' in (s[1: :2]):
+        return True
+    else:
+        return False
+
+
+print(has_syncopation(".#.#.#.#"))
+print(has_syncopation("#.#...#."))
+print(has_syncopation("#.#.###."))
+
+
+import math
+def quadratic_equation(a, b, c):
+   return math.sqrt((-b+ math.sqrt(b^2 -4 * a * c))/2/a)
+
+print(quadratic_equation(1, 2, -3))
+print(quadratic_equation(2, -7, 3))
+
+
+def lines_are_parallel(l1, l2):
+
+    if l1 == l2  or l1[:2] == l2[:2]:
+        return True
+    else:
+        return False
+
+print(lines_are_parallel([1, 2, 3], [1, 2, 4]))
+print(lines_are_parallel([2, 4, 1], [4, 2, 1]))
+print(lines_are_parallel([0, 1, 5], [0, 1, 5]))
+
+
+import numpy as np
+a = np.array([11, 12, 13, 14])
+b = np.array([1, 2, 3, 4])
+c = a - b
+print(c)
+
+a = 9/2
+b = 5.2/2
+print(a,b)
+
+
+
+a =np.zeros((3,3))
+print(a)
+
+a = np.linspace(5,15,10)
+print(a.size)
+
+
+import re
+def negative_sum(chars):
+
+    ch = re.findall('-\d+',chars)
+    return int(ch[0]) + int(ch[1])
+
+
+print(negative_sum("-12 13%14&-11"))
+print(negative_sum("22 13%14&-11-22 13 12"))
+
+from decimal import Decimal
+
+def decimal_part(n):
+    n = str(abs(n))
+    return float(Decimal(n) % 1)
+
+print(decimal_part(1.2))
+
+
+
+
+def birthday_cake_candles(candles):
+    l = []
+    s = max(candles)
+    return candles.count(s)
+
+print(birthday_cake_candles([4, 4, 1, 3]))
+print(birthday_cake_candles([3, 2, 1, 3]))
+print(birthday_cake_candles([82, 49, 82, 82, 41, 82, 15, 63, 38, 25]))
+
+
+def emphasise(txt):
+    return txt.capitalize()
+
+print(emphasise("hello world"))
+print(emphasise("GOOD MORNING"))
+
+
+def make_rug(m, n, s ='#' ):
+    l = []
+    for x in range(m):
+        l.append(n*s)
+    return l
+
+print(make_rug(3, 5, '$'))
+print(make_rug(2, 2, 'A'))
+print(make_rug(3, 5))
+
+
+def valid(txt):
+    s = [0-9]
+    for x in txt:
+        if int(x) in s and len(txt)== 4 or len(txt) ==6:
+            return True
+        else:
+            return False
+
+
+
+print(valid("1234"))
+
+'''
+def find_it(items, name):
+    for x  in items.keys():
+        if x.title() == name:
+            return "Timmy is gone..."
+        else:
+            return "Timmy is here!"
+
+
+print(find_it(items = {"tv": 30,"timmy": 20,"stereo": 50,},name ='Timmy'))
